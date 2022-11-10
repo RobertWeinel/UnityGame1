@@ -8,6 +8,7 @@ public class StartMenu : SecuredBehaviourScript
 
     public override void AwakeCustom()
     {
+       
         return;
     }
        

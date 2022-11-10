@@ -54,7 +54,7 @@ public abstract class SecuredBehaviourScript : MonoBehaviour
 
             for (int i = 0; i < button.onClick.GetPersistentEventCount(); i++)
             {
-                string methodToSecure = $"{button.name} : {button.onClick.GetPersistentMethodName(i)}";
+                string methodToSecure = $"{button.name} : {button.onClick. GetPersistentMethodName(i)}";
                 methodsToSecureLocal.Add(methodToSecure);
                 ClickMethodsObserver.Current.AddMethodToSecure(methodToSecure);
                 if (!ClickMethodsObserver.Current.Methods.Any(m => m.Equals(methodToSecure)))
